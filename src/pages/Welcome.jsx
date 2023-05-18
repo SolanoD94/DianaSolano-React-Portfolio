@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Intro from '../components/Intro';
 
 
-export default function Welcome() {
+export default function Welcome({ Component, pageProps, router }) {
   return (
     <div className="flex h-full flex-col bg-zinc-500 dark:bg-black">
       <div className='inset-0 flex justify-center sm:px-8 bg-zinc-50'>

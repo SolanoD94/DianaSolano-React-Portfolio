@@ -1,33 +1,8 @@
 import React from "react"
 import { useState } from 'react'
-import { Dialog, Disclosure, Popover} from '@headlessui/react'
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
-import { PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { Dialog, Popover } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon,} from '@heroicons/react/24/outline'
 import avatarImage from "../images/avatar.jpg"
-
-const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-]
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -36,8 +11,8 @@ export default function Example() {
     <header className="bg-white ">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex">
-          <a href="/" className="-m-1.5 p-1.5">
-            <img className="rounded-full bg-zinc-100 object-cover light:bg-zinc-800 h-9 w-9" src={avatarImage} alt="Profile"></img>
+          <a href="/" className="-m-1.5 p-5">
+            <img className="rounded-full bg-zinc-100 object-cover light:bg-zinc-800 h-12 w-12" src={avatarImage} alt="Profile"></img>
           </a>
         </div>
         <div className="flex lg:hidden ">
@@ -76,7 +51,7 @@ export default function Example() {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
-                className="rounded-full bg-zinc-100 object-cover light:bg-zinc-800 h-9 w-9"
+                className="rounded-full bg-zinc-100 object-cover light:bg-zinc-800 h-12 w-12"
                 src= {avatarImage}
                 alt=""
               />
@@ -93,25 +68,6 @@ export default function Example() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <Disclosure as="div" className="-mx-3">
-                  {({ open }) => (
-                    <>
-                      
-                      <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products, ...callsToAction].map((item) => (
-                          <Disclosure.Button
-                            key={item.name}
-                            as="a"
-                            href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                          >
-                            {item.name}
-                          </Disclosure.Button>
-                        ))}
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
                 <a
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
