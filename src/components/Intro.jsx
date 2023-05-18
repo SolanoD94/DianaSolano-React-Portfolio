@@ -1,0 +1,39 @@
+import React from "react"
+import portraitImage from '../images/avatar.jpg'
+
+
+export default function Intro() {
+  return (
+    <div className="sm:px-8 mt-16 sm:mt-32">
+      <div className="mx-auto max-w-7xl lg:px-8">
+          <div className="relative px-4 sm:px-8 lg:px-12">
+            <div className="mx-auto max-w-2xl lg:max-w-5xl">
+              <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+              <div className="lg:pl-20">
+                <div className="max-w-xs px-2.5 lg:max-w-none">
+                <img
+                  src={portraitImage}
+                  alt=""
+                  sizes="(min-width: 1024px) 32rem, 20rem"
+                  className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800">
+                </img>
+                </div>
+              </div>
+              <div className="lg:order-first lg:row-span-2"> 
+                  <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Hi, I'm Diana Solano!</h2>
+                  <p className="mt-5 text-lg leading-8 text-gray-600">
+                Combining a passion for technology with a solid foundation in <strong>international business</strong>, I offer a unique skill set that bridges the gap between business strategy and software development. Proficient in various programming languages, I am excited to collaborate with forward-thinking companies and contribute my skills to the digital landscape.
+                  </p>
+                  <div className="mt-6 flex gap-6">
+                  {/* -- */}
+                  
+                  {/* -- */}
+                  </div>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
