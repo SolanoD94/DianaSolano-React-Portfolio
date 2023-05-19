@@ -4,7 +4,7 @@ import { Dialog, Popover } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon,} from '@heroicons/react/24/outline'
 import avatarImage from "../images/avatar.jpg"
 
-export default function Example() {
+export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (

@@ -1,7 +1,9 @@
 import React from "react"
 import portraitImage from '../images/avatar.jpg'
 import {GitHubIcon, InstagramIcon, LinkedInIcon} from "./SocialIcons" 
-import {Link} from "react-router-dom"
+
+
+const iconStyle= "fill-zinc-500 w-7 hover:fill-zinc-800";
 
 export default function Intro() {
   return (
@@ -21,19 +23,25 @@ export default function Intro() {
                 </div>
                 
               </div>
-              <div className="lg:order-first lg:row-span-2"> 
+                <div className="lg:order-first lg:row-span-2"> 
                   <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">Hi, I'm Diana Solano!</h2>
                   <p className="mt-10 text-lg leading-8 text-gray-600">
-                Combining a passion for technology with a solid foundation in <strong>international business</strong>, I offer a unique skill set that bridges the gap between business strategy and software development. Proficient in various programming languages. I am excited to collaborate with forward-thinking companies and contribute my skills to the digital landscape.
+                    Combining a passion for technology with a solid foundation in <strong>international business</strong>, I offer a unique skill set that bridges the gap between business strategy and software development. Proficient in various programming languages. I am excited to collaborate with forward-thinking companies and contribute my skills to the digital landscape.
                   </p>
-                  <div className="group mt-10 flex gap-9 h-7 fill-zinc-500 transition group-hover:fill-zinc-600">
-                    
-                    <LinkedInIcon  />
-                    <InstagramIcon/>
-                    <GitHubIcon/>
+
+                  <div className="group mt-10 flex gap-9 h-7 transition">
+                      <a className={iconStyle} href="https://www.linkedin.com/in/diana-solano-783978137">
+                        <LinkedInIcon/>
+                      </a>
+                      <a className={iconStyle} href="https://www.instagram.com/diana_solano2/">
+                        <InstagramIcon />
+                      </a>
+                      <a className={iconStyle} href="https://github.com/SolanoD94">
+                        <GitHubIcon  />
+                      </a>
                   </div>
               </div>
-              </div>
+            </div>
           </div>
         </div>
       </div>
