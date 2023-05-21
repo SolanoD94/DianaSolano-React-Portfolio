@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Dialog, Popover } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import avatarImage from "../images/avatar.jpg";
+import favicon from "../images/favicon-3.png";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ export default function Header() {
           <a href="/" className="-m-1.5 p-5">
             <img
               className="rounded-full bg-zinc-100 object-cover light:bg-zinc-800 h-12 w-12"
-              src={avatarImage}
+              src={favicon}
               alt="Profile"
             ></img>
           </a>
@@ -53,7 +54,7 @@ export default function Header() {
           </a>
         </Popover.Group>
 
-        <div className="hidden lg:flex lg:justify-end rounded-full bg-white/90 px-5 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur">
+        <div className="hidden lg:flex lg:justify-end mr-3 rounded-full bg-white/90 px-5 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur hover:bg-cyan-100 hover:ring-zinc-100/60">
           <a
             href="#contact"
             className="text-sm font-semibold leading-6 text-gray-900"
@@ -112,7 +113,7 @@ export default function Header() {
               <div className="py-6">
                 <a
                   href="#contact"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-cyan-50"
                 >
                   Contact Me
                 </a>

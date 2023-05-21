@@ -1,5 +1,5 @@
 import React from "react";
-import portraitImage from "../images/avatar.jpg";
+import portraitImage from "../images/IMG_4974.JPG";
 import { GitHubIcon, InstagramIcon, LinkedInIcon } from "./SocialIcons";
 
 const iconStyle = "fill-zinc-500 w-7 hover:fill-zinc-800";
@@ -26,12 +26,16 @@ export default function Intro() {
                   Hi, I'm Diana Solano!
                 </h2>
                 <p className="mt-10 text-lg leading-8 text-gray-600">
-                  Combining a passion for technology with a solid foundation in{" "}
-                  <strong>international business</strong>, I offer a unique
+                  Combining a passion for technology with a solid foundation in
+                  <strong> international business</strong>, I offer a unique
                   skill set that bridges the gap between business strategy and
-                  software development. Proficient in various programming
-                  languages. I am excited to collaborate with forward-thinking
-                  companies and contribute my skills to the digital landscape.
+                  <strong>
+                    {" "}
+                    software development. Proficient in various programming
+                    languages.{" "}
+                  </strong>
+                  I am excited to collaborate with forward-thinking companies
+                  and contribute my skills to the digital landscape.
                 </p>
 
                 <div className="group mt-10 flex gap-9 h-7 transition">
