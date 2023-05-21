@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import {Button} from "./Button";
 
 function BriefcaseIcon(props) {
   return (
@@ -23,7 +23,6 @@ function BriefcaseIcon(props) {
     </svg>
   );
 }
-
 
 export default function WorkExperience({ jobs }) {
   return (

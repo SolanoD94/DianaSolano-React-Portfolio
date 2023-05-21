@@ -23,54 +23,47 @@ function GitHubIcon(props) {
   );
 }
 
-export default function Project({ projects }) {
+export default function TechCards({ technologies }) {
   return (
     <div>
-      {projects.map((project) => (
+      {technologies.map((tool) => (
         <div className="mt-12 flex-wrap">
-          <div key={project.id} className="group relative flex-col items-start">
+          <div key={tool.id} className="group relative flex-col items-start">
             <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-100 opacity-100 transition duration-300 group-hover:opacity-0 sm:-inset-x-6 rounded-2xl">
               <div className="absolute inset-0 bg-zinc-100 opacity-0 hover:opacity-100 transition duration-300" />
             </div>
             <div className="relative px-5">
               <h1 className="text-lg flex-wrap flex flex-row relative font-bold tracking-tight text-zinc-800">
-                {project.name}
+                {tool.title}
               </h1>
-              <img
-                src={project.screenshot}
-                alt={project.name}
-                className="rounded-2xl my-2"
-              />
-              <p className="my-3 text-sm text-zinc-600">
-                {project.description}
-              </p>
+              <p className="my-3 text-sm text-zinc-600">{tool.description}</p>
               <div className="flex flex-row flex-wrap">
-                {project.technologies.map((technology) => (
+                {tool.language.map((language) => (
                   <div
-                    key={technology}
+                    key={language}
                     className="m-1 z-10 w-auto rounded-full bg-cyan-200 px-3.5 py-1.5 font-normal text-gray-600 text-sm hover:bg-gray-100"
                   >
-                    {technology}
+                    {language}
                   </div>
                 ))}
               </div>
               <a
-                href={project.url}
+                href={tool.link}
                 target="_blank"
                 rel="noreferrer"
                 className="relative z-10 mt-6 flex text-sm font-medium text-zinc-500 transition group-hover:text-cyan-500"
               >
                 <LinkIcon className="h-6 w-6 flex-none" />
-                <span className="ml-2">{project.url}</span>
+                <span className="ml-2">{tool.link}</span>
               </a>
               <a
-                href={project.github}
+                href={tool.github}
                 target="_blank"
                 rel="noreferrer"
                 className="relative z-10 mt-6 flex text-sm font-medium text-zinc-500 transition group-hover:text-cyan-500"
               >
                 <GitHubIcon className="h-6 w-6 flex-none mb-3" />
-                <span className="ml-2">{project.github}</span>
+                <span className="ml-2">{tool.github}</span>
               </a>
             </div>
           </div>
