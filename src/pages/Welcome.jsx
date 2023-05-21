@@ -7,6 +7,7 @@ import TechCards from "../components/TechCards";
 import jobs from "../jobs";
 import projects from "../projects";
 import technologies from "../technologies";
+import Contact from "../components/Contact";
 
 export default function Welcome({ Component, pageProps, router }) {
   return (
@@ -16,11 +17,11 @@ export default function Welcome({ Component, pageProps, router }) {
           <div className="w-full bg-white ring-1 ring-zinc-100">
             <Header />
             <Intro />
-            <div className="sm:px-8 mt-16 sm:mt-12">
+            <div className="sm:px-8 mt-16 sm:mt-12 ">
               <div className="mx-auto max-w-7xl lg:px-8">
                 <div className="relative px-4 sm:px-8 lg:px-12">
-                  <div className="mx-auto max-w-2xl lg:max-w-5xl">
-                    <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+                  <div className="mx-auto max-w-2xl lg:max-w-5xl ">
+                    <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12 border-b border-gray-200 pb-20">
                       <div className="lg:order-first lg:row-span-2">
                         <h1 className="text-5xl font-bold tracking-tight text-zinc-800 sm:text-2xl">
                           Projects
@@ -35,6 +36,9 @@ export default function Welcome({ Component, pageProps, router }) {
                           technical proficiency.
                         </p>
                         <Project projects={projects} />
+                      </div>
+                      <div className="lg:pl-20">
+                        <Contact />
                       </div>
                       <div className="lg:pl-20">
                         <WorkExperience jobs={jobs} />
@@ -56,7 +60,7 @@ export default function Welcome({ Component, pageProps, router }) {
                     me to build robust server-side applications and RESTful
                     APIs.
                   </p>
-                  <div className="lg:pl-20">
+                  <div className="">
                     <TechCards technologies={technologies} />
                   </div>
                 </div>

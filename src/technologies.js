@@ -1,13 +1,5 @@
 const technologies = [
   {
-    id: 1,
-    title: "Diana Solano Portfolio using CSS",
-    description: "My first portfolio using vanilla HTML, CSS and Flexbox",
-    language: ["HTML", "CSS"],
-    link: "https://github.com/SolanoD94/Diana-Solano-Portfolio-FullStack",
-    github: "https://github.com/SolanoD94/Diana-Solano-Portfolio-FullStack",
-  },
-  {
     id: 2,
     title: "Password Generator",
     description:
@@ -73,7 +65,7 @@ const technologies = [
   },
   {
     id: 9,
-    title: "Employer CMS using MySQL.",
+    title: "Employer CMS using MySQL",
     description:
       "Command-line application that manages a company's employee database, using Node.js, Inquirer, and MySQL. Allow users to easily view and interact with information about the companie's administration.",
     language: ["JavaScript", "Node.js", "Inquirer", "MySQL"],
@@ -106,7 +98,7 @@ const technologies = [
   },
   {
     id: 12,
-    title: "A Social Network Back-End API.",
+    title: "A Social Network Back-End API",
     description:
       "This is an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. You’ll use Express.js for routing, a MongoDB database, and the Mongoose ODM.",
     language: ["JavaScript", "Node.js", "Mongoose ODM", "Mongo DB"],
