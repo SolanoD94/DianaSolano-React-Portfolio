@@ -5,7 +5,7 @@ export default function Footer() {
   //   const location = useLocation();
   return (
     <footer className="w-full grid sm:grid-cols-1 lg:grid-cols-3  px-5 my-8 lg:my-12">
-      <div className="flex lg:col-span-2 gap-6 text-sm font-medium text-zinc-800 mx-8">
+      <div className="flex flex-wrap lg:col-span-2 gap-6 text-sm font-medium text-zinc-800 mx-8">
         <a className="transition hover:text-cyan-500" href="#top">
           Go to top
         </a>

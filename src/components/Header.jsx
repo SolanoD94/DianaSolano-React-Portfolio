@@ -2,8 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { Dialog, Popover } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import avatarImage from "../images/avatar.jpg";
 import favicon from "../images/favicon-3.png";
+import portraitImage from "../images/IMG_4974.JPG";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -75,7 +75,7 @@ export default function Header() {
             <a href="/" className="-m-1.5 p-1.5">
               <img
                 className="rounded-full bg-zinc-100 object-cover light:bg-zinc-800 h-12 w-12"
-                src={avatarImage}
+                src={portraitImage}
                 alt=""
               />
             </a>
