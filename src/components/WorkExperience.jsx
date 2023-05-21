@@ -26,7 +26,7 @@ function BriefcaseIcon(props) {
 
 export default function WorkExperience({ jobs }) {
   return (
-    <div className="rounded-2xl border border-zinc-200/60 p-6">
+    <div className="rounded-2xl border border-zinc-200/60 p-6" id="experience">
       <h2 className="flex text-sm font-semibold text-zinc-900">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Work Experience</span>

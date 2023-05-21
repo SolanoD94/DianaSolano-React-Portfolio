@@ -15,7 +15,7 @@ export default function Intro() {
                 <div className="max-w-xs px-2.5 lg:max-w-none">
                   <img
                     src={portraitImage}
-                    alt=""
+                    alt="DianaSolano"
                     sizes="(min-width: 1024px) 32rem, 20rem"
                     className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
                   ></img>
@@ -39,6 +39,7 @@ export default function Intro() {
                     className={iconStyle}
                     href="https://www.linkedin.com/in/diana-solano-783978137"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <LinkedInIcon />
                   </a>
@@ -46,6 +47,7 @@ export default function Intro() {
                     className={iconStyle}
                     href="https://www.instagram.com/diana_solano2/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <InstagramIcon />
                   </a>
@@ -53,6 +55,7 @@ export default function Intro() {
                     className={iconStyle}
                     href="https://github.com/SolanoD94"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <GitHubIcon />
                   </a>
