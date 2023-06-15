@@ -1,9 +1,20 @@
 import localEats from "./images/localEats.png";
 import grafittyScreen from "./images/graffityScreen.png";
+import profinder from "./images/ProFinder-Home.png";
 
 const projects = [
   {
     id: 1,
+    name: "ProFinder",
+    description:
+      "Graffity is an Ecommerce where you can design your own T-shirt. ",
+    technologies: ["Tailwind CSS", "Mongoose", "MongoDB", "Javascript", "HTML"],
+    url: "https://profinder-dev.herokuapp.com/",
+    role: "Team Leader and DB",
+    screenshot: profinder,
+  },
+  {
+    id: 2,
     name: "LocalEats",
     description:
       "Local Eats is a web application that allows users to post their favorite selfmade dishes along with information about where the dish can be bought, the time when the dish is available, and the price.",
@@ -23,7 +34,7 @@ const projects = [
     screenshot: localEats,
   },
   {
-    id: 2,
+    id: 3,
     name: "Grafitty",
     description:
       "Graffity is an Ecommerce where you can design your own T-shirt. ",
