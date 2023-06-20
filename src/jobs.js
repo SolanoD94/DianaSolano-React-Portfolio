@@ -35,7 +35,7 @@ const jobs = [
       location: "Puebla City",
       logo: qualityCopy,
     },
-    position: "Marketing Director",
+    position: "Marketing Manager",
     description: "Quality Copy is a printing machine distributor.",
     duration: "2017 - 2021",
   },

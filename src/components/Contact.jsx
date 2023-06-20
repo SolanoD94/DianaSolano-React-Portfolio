@@ -47,7 +47,8 @@ export default function Contact() {
             +52 2226082377
           </dd>
         </ol>
-      </ul>
+      </ul>              
     </div>
+    
   );
 }

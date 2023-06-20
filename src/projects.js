@@ -1,5 +1,5 @@
 import localEats from "./images/localEats.png";
-import grafittyScreen from "./images/graffityScreen.png";
+// import grafittyScreen from "./images/graffityScreen.png";
 import profinder from "./images/ProFinder-Home.png";
 
 const projects = [
@@ -7,9 +7,20 @@ const projects = [
     id: 1,
     name: "ProFinder",
     description:
-      "Graffity is an Ecommerce where you can design your own T-shirt. ",
-    technologies: ["Tailwind CSS", "Mongoose", "MongoDB", "Javascript", "HTML"],
+      "ProFinder is an application designed to connect users with skilled professionals who offer services to address common daily life challenges. Whether you need assistance with cleaning, nursing, electrical work, carpentry, or other essential tasks, ProFinder provides a user-friendly interface where users can search for service providers based on their specific needs and location.",
+    technologies: [
+      "React.js",
+      "GraphQl",
+      "Tailwind CSS",
+      "Mongoose",
+      "MongoDB",
+      "Javascript",
+      "Node.js",
+      "Express.js",
+      "HTML",
+    ],
     url: "https://profinder-dev.herokuapp.com/",
+    github: "https://github.com/SolanoD94/profinder",
     role: "Team Leader and DB",
     screenshot: profinder,
   },
@@ -33,16 +44,16 @@ const projects = [
     role: "Team Leader",
     screenshot: localEats,
   },
-  {
-    id: 3,
-    name: "Grafitty",
-    description:
-      "Graffity is an Ecommerce where you can design your own T-shirt. ",
-    technologies: ["HTML", "CSS", "Shopify"],
-    url: "https://grafitty.com.mx/",
-    role: "Team Leader and Owner",
-    screenshot: grafittyScreen,
-  },
+  // {
+  //   id: 3,
+  //   name: "Grafitty",
+  //   description:
+  //     "Graffity is an Ecommerce where you can design your own T-shirt. ",
+  //   technologies: ["HTML", "CSS", "Shopify"],
+  //   url: "https://grafitty.com.mx/",
+  //   role: "Team Leader and Owner",
+  //   screenshot: grafittyScreen,
+  // },
 ];
 
 export default projects;
