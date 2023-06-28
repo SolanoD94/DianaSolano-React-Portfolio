@@ -41,7 +41,7 @@ export default function Header() {
             Experience
           </a>
           <a
-            href="#project"
+            href="#projects"
             className="text-sm font-semibold leading-6 text-gray-900"
           >
             Projects

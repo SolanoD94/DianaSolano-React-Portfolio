@@ -45,12 +45,13 @@ export default function Welcome({ Component, pageProps, router }) {
                         </p>
                         <Project projects={projects} />
                       </div>
-                      <div className="lg:pl-20" id="contact">
+                      <div className="lg:pl-20 lg:order-first" id="contact">
                         <Contact />
                       </div>
                       <div className="lg:pl-20">
                         <WorkExperience jobs={jobs} />
                       </div>
+                      
                     </div>
                   </div>
                 </div>

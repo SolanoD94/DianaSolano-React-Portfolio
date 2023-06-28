@@ -1,4 +1,5 @@
 import React from "react";
+import { LinkedInIcon } from "../components/SocialIcons";
 
 function MailIcon(props) {
   return (
@@ -47,8 +48,16 @@ export default function Contact() {
             +52 2226082377
           </dd>
         </ol>
-      </ul>              
+        <ol className="flex gap-4">
+          <LinkedInIcon className="h-6 w-6 flex-none fill-zinc-500" />
+          <a
+            className="w-auto flex-none text-sm font-medium text-cyan-500"
+            href="https://www.linkedin.com/in/diana-solano-castillo/"
+          >
+            /diana-solano-castillo/
+          </a>
+        </ol>
+      </ul>
     </div>
-    
   );
 }

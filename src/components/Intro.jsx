@@ -41,7 +41,7 @@ export default function Intro() {
                 <div className="group mt-10 flex gap-9 h-7 transition">
                   <a
                     className={iconStyle}
-                    href="https://www.linkedin.com/in/diana-solano-783978137/?locale=en_US"
+                    href="https://www.linkedin.com/in/diana-solano-castillo/"
                     target="_blank"
                     rel="noreferrer"
                   >

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "./Button";
+import { CVButton, DevCVButton } from "./Button";
 
 function BriefcaseIcon(props) {
   return (
@@ -56,7 +56,8 @@ export default function WorkExperience({ jobs }) {
           </ol>
         ))}
       </ul>
-      <Button />
+      <DevCVButton />
+      <CVButton />
     </div>
   );
 }
