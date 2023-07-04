@@ -57,7 +57,6 @@ export default function WorkExperience({ jobs }) {
         ))}
       </ul>
       <DevCVButton />
-      <CVButton />
     </div>
   );
 }

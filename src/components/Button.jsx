@@ -24,7 +24,7 @@ export function DevCVButton() {
         rel="noreferrer"
         className="text-center rounded-md w-full bg-zinc-200 px-3.5 py-2.5 text-sm font-medium text-zinc-900 shadow-sm hover:bg-zinc-200/70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-300"
       >
-        Download Developer CV
+        Download CV
       </a>
     </div>
   );
