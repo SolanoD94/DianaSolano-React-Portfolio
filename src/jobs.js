@@ -1,4 +1,4 @@
-import rollAloo from "./images/rollAloo.png";
+import giga from "./images/giga-logo.jpg";
 import grafittyLogo from "./images/grafitty.png";
 import qualityCopy from "./images/qualityCopy.png";
 import volkswagenLogo from "./images/volkswagenLogo.png";
@@ -7,14 +7,14 @@ const jobs = [
   {
     id: 1,
     company: {
-      name: "Roll Aloo",
-      location: "Puebla City",
-      logo: rollAloo,
+      name: "GIGA IT",
+      location: "Remote",
+      logo: giga,
     },
-    position: "Shop Owner",
+    position: "Software Developer",
     description:
-      "Roll Aloo is a european ice-cream franchise, where I was the owner and full time operations administrative. ",
-    duration: "2021 - 2022",
+      "Software Developer at Nearshore Services USA",
+    duration: "2023 - today",
   },
   {
     id: 2,
