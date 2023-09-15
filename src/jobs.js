@@ -23,7 +23,7 @@ const jobs = [
       location: "Puebla City",
       logo: grafittyLogo,
     },
-    position: "CEO & Co-Founder",
+    position: "Shopify Admin",
     description:
       "Grafitty is not only a website where you can design a tshirt, but also, Grafitty offers a B2B service for other clothing brands that want to do dropshipping with us. I developed from scratch the supply chain, the branding, and created the website itself. Obtaining growth results of 120% per year.",
     duration: "2017 - 2022",
